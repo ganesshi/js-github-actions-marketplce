@@ -1,0 +1,12 @@
+name: 'My JS Custom Action'
+description: 'Demo js for marketplace'
+author: 'ganesshi'
+
+# Marketplace Branding
+branding:
+  icon: 'package'       # Choose from GitHub's supported list (e.g., zap, play, activity)
+  color: 'blue'          # Options: white, yellow, blue, green, orange, red, purple, gray-dark
+
+runs:
+  using: 'node20'        # Ensure you are using a modern Node version
+  main: 'dist/index.js'  # Points to the bundled file
