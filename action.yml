@@ -1,12 +1,22 @@
-name: 'My JS Custom Action'
-description: 'Demo js for marketplace'
+name: 'Print Name Action'
+description: 'Takes a name as input and prints it to the logs'
 author: 'ganesshi'
 
 # Marketplace Branding
 branding:
   icon: 'package'       # Choose from GitHub's supported list (e.g., zap, play, activity)
   color: 'blue'          # Options: white, yellow, blue, green, orange, red, purple, gray-dark
+  
+inputs:
+  my-name:
+    description: 'The name of the person to greet'
+    required: true
+    default: 'World'
+
+outputs:
+  greeting:
+    description: 'The full greeting string'
 
 runs:
-  using: 'node20'        # Ensure you are using a modern Node version
-  main: 'dist/index.js'  # Points to the bundled file
+  using: 'node20'
+  main: 'dist/index.js' # Remember to bundle your code into /dist!
