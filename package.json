@@ -1,0 +1,15 @@
+{
+  "name": "js-github-actions-marketplce",
+  "version": "1.0.0",
+  "description": "A simple greeting action",
+  "main": "index.js",
+  "scripts": {
+    "build": "ncc build index.js -o dist --minify"
+  },
+  "dependencies": {
+    "@actions/core": "^2.0.2"
+  },
+  "devDependencies": {
+    "@vercel/ncc": "^0.38.4"
+  }
+}
